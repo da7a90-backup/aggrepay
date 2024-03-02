@@ -6,22 +6,33 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "cd ./node_modules/@saibotsivad/mongodb && npm install && npm run build"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.1.1",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@saibotsivad/mongodb": "https://github.com/da7a90-backup/mongodb/tarball/6b65eb255fe2beaccff383fc06743320e043e3a2",
+    "bcryptjs": "^2.4.3",
+    "framer-motion": "^11.0.3",
+    "next": "14.1.0",
+    "next-auth": "4.24.5",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.0"
+    "realm-web": "^2.0.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.0"
+    "typescript": "^5"
   }
 }
